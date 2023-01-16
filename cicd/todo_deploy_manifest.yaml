@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: todo-site
-        image: harnesstest.azurecr.io/todoapp:latest
+        image: harnesstest.azurecr.io/todoapp:v<+pipeline.sequenceId>
         imagePullPolicy: Always
 ---
 apiVersion: v1
